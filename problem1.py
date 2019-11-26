@@ -17,3 +17,6 @@ mathelecgeas = pd.merge(mathelec,geas,on='Student')
 ece = pd.merge(mathelecgeas,esat,on='Student')
 
 ece_long = pd.melt(ece, id_vars=['Student'],var_name='Subject', value_name='Grades')
+
+print(ece,'\n')
+print(ece_long)
