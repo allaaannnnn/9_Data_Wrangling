@@ -9,3 +9,7 @@ boxl = box.pivot(index='Box',columns='Dimension',values='Value')
 
 volbox1 = boxl.iat[0,0]*boxl.iat[0,1]*boxl.iat[0,2]
 volbox2 = boxl.iat[1,0]*boxl.iat[1,2]*boxl.iat[1,2]
+
+boxl.insert(3,'Volume',[volbox1, volbox2])
+
+print(boxl)
